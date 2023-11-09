@@ -1,0 +1,7 @@
+name: BuTils
+main: wex\BuTils\BuTils
+version: 0.0.1
+api: 5.0.0
+author: Wex
+description: A PocketMine-MP plugin that makes life easier for minecraft builders.
+website: https://github.com/Xeww/BuTils

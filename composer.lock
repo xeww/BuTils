@@ -4,8 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fa424c147ad2cc74e2f0add864d872b",
-    "packages": [],
+    "content-hash": "ded0bc7bc68c92362008480f5cb3aac3",
+    "packages": [
+        {
+            "name": "jojoe77777/formapi",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jojoe77777/FormAPI.git",
+                "reference": "master"
+            },
+            "type": "library"
+        }
+    ],
     "packages-dev": [
         {
             "name": "adhocore/json-comment",

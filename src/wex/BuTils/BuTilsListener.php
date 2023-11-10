@@ -32,6 +32,7 @@ final class BuTilsListener implements Listener{
         if($gameMode !== GameMode::CREATIVE){
 
             if(!$player->hasBlockCollision()){
+
                 $player->sendMessage(BuTils::PREFIX.TextFormat::RED."No-Clip was disabled due to a gamemode change.");
                 $player->setHasBlockCollision(true);
             }

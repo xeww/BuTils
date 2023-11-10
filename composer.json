@@ -1,0 +1,24 @@
+{
+  "name": "wex/butils",
+  "description": "A PocketMine-MP plugin that makes life easier for builders.",
+  "authors": [
+    {
+      "name": "wex"
+    }
+  ],
+
+  "repositories": [],
+
+  "require-dev": {
+    "pocketmine/pocketmine-mp": "^5.0.0",
+    "phpstan/phpstan": "^1.10"
+  },
+
+  "require": {
+
+  },
+
+  "autoload": {
+    "classmap": ["src"]
+  }
+}

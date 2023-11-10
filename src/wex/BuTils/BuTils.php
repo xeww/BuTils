@@ -9,6 +9,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use wex\BuTils\commands\BuTilsCommand;
 use wex\BuTils\commands\FlySpeedCommand;
+use wex\BuTils\commands\NightVisionCommand;
 use wex\BuTils\commands\NoClipCommand;
 
 final class BuTils extends PluginBase{
@@ -47,7 +48,8 @@ final class BuTils extends PluginBase{
         $commandMap->registerAll("BuTils", [
             new BuTilsCommand(),
             new FlySpeedCommand(),
-            new NoClipCommand()
+            new NoClipCommand(),
+            new NightVisionCommand()
         ]);
     }
 

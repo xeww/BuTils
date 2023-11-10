@@ -58,15 +58,15 @@ final class BuTils extends PluginBase{
     }
 
     public function hasExplosions() : bool{
-        return $this->getConfig()->get("explosions", true);
+        return (bool)$this->getConfig()->get("explosions", true);
     }
 
     public function hasLeavesDecay() : bool{
-        return $this->getConfig()->get("leaves_decay", true);
+        return (bool)$this->getConfig()->get("leaves_decay", true);
     }
 
     public function doesDragonEggTeleports() : bool{
-        return $this->getConfig()->get("dragon_egg_teleport", true);
+        return (bool)$this->getConfig()->get("dragon_egg_teleport", true);
     }
 
     public function addSession(Player $player) : void{

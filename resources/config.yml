@@ -6,3 +6,12 @@ leaves_decay: true
 
 # true|false, whether the dragon egg shall teleport upon breaking.
 dragon_egg_teleport: true
+
+# true|false, whether falling blocks (e.g. anvil, sand, gravel) shall fall
+falling_blocks: true
+
+# true|false, whether coral shall be able to die when not in water
+coral_death: true
+
+# true|false, whether liquid such as lava or water shall flow
+liquid_flow: true

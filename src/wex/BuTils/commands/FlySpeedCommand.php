@@ -47,7 +47,7 @@ final class FlySpeedCommand extends Command implements PluginOwned{
 
             if($args[0] === "default" || $args[0] === "reset"){
                 $session->setFlySpeed(BuTils::DEFAULT_FLY_SPEED);
-                $sender->sendMessage(BuTils::PREFIX.TextFormat::GREEN."§aFlying speed was set back to default.");
+                $sender->sendMessage(BuTils::PREFIX.TextFormat::GREEN."Flying speed was set back to default.");
                 return;
             }
 

@@ -15,7 +15,7 @@ use wex\BuTils\commands\NoClipCommand;
 final class BuTils extends PluginBase{
 
     public const PREFIX =
-        TextFormat::WHITE."[".TextFormat::GOLD."Bu".TextFormat::GRAY.TextFormat::ITALIC."Tils".TextFormat::RESET."] ".TextFormat::GRAY.TextFormat::BOLD."» ".TextFormat::RESET;
+        TextFormat::WHITE."[".TextFormat::GOLD."Bu".TextFormat::GRAY.TextFormat::ITALIC."Tils".TextFormat::RESET.TextFormat::WHITE."] ".TextFormat::GRAY.TextFormat::BOLD."» ".TextFormat::RESET;
 
     public const DEFAULT_FLY_SPEED = 0.05;
 
@@ -67,6 +67,18 @@ final class BuTils extends PluginBase{
 
     public function doesDragonEggTeleports() : bool{
         return (bool)$this->getConfig()->get("dragon_egg_teleport", true);
+    }
+
+    public function hasFallingBlocks() : bool{
+        return (bool)$this->getConfig()->get("falling_blocks", true);
+    }
+
+    public function hasCoralDeath() : bool{
+        return (bool)$this->getConfig()->get("coral_death", true);
+    }
+
+    public function hasLiquidFlow() : bool{
+        return (bool)$this->getConfig()->get("liquid_flow", true);
     }
 
     public function addSession(Player $player) : void{

@@ -5,6 +5,11 @@ declare(strict_types=1);
 namespace wex\BuTils;
 
 use pocketmine\block\BlockTypeIds;
+use pocketmine\block\Coral;
+use pocketmine\block\CoralBlock;
+use pocketmine\block\Liquid;
+use pocketmine\block\utils\Fallable;
+use pocketmine\event\block\BlockUpdateEvent;
 use pocketmine\event\block\LeavesDecayEvent;
 use pocketmine\event\entity\EntityExplodeEvent;
 use pocketmine\event\Listener;
@@ -56,6 +61,29 @@ final class BuTilsListener implements Listener{
     public function onLeavesDecay(LeavesDecayEvent $event) : void{
         if(!BuTils::getInstance()->hasLeavesDecay()){
             $event->cancel();
+        }
+    }
+
+    public function onBlockUpdate(BlockUpdateEvent $event) : void{
+        $block = $event->getBlock();
+        $plugin = BuTils::getInstance();
+
+        if(!$plugin->hasFallingBlocks()){
+            if($block instanceof Fallable){
+                $event->cancel();
+            }
+        }
+
+        if(!$plugin->hasCoralDeath()){
+            if($block instanceof Coral || $block instanceof CoralBlock){
+                $event->cancel();
+            }
+        }
+
+        if(!$plugin->hasLiquidFlow()){
+            if($block instanceof Liquid){
+                $event->cancel();
+            }
         }
     }
 }

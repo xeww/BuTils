@@ -7,28 +7,13 @@
     }
   ],
 
-  "repositories": [
-    {
-      "type": "package",
-      "package": {
-        "name": "jojoe77777/formapi",
-        "version": "2.1.1",
-        "source": {
-          "url": "https://github.com/jojoe77777/FormAPI.git",
-          "type": "git",
-          "reference": "master"
-        }
-      }
-    }
-  ],
-
   "require-dev": {
     "pocketmine/pocketmine-mp": "^5.0.0",
     "phpstan/phpstan": "^1.10"
   },
 
   "require": {
-    "jojoe77777/formapi": "2.1.1"
+    "dktapps/pmforms": "^2.1.0"
   },
 
   "autoload": {

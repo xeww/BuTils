@@ -16,7 +16,7 @@ final class FlySpeedCommand extends Command{
         parent::__construct(
             $name = "flyspeed",
             "Update your flying speed",
-            BuTils::PREFIX.TextFormat::RED."Use: /$name [".BuTils::MIN_FLY_SPEED."-".BuTils::MAX_FLY_SPEED."]",
+            BuTils::PREFIX.TextFormat::RED."Use: /$name [".BuTils::MIN_FLY_SPEED."-".BuTils::MAX_FLY_SPEED."]|[reset/default]",
             ["fs", "fspeed"]
         );
         $this->setPermission("butils.command.flyspeed");
@@ -40,6 +40,12 @@ final class FlySpeedCommand extends Command{
             if(!isset($args[0])){
                 $sender->sendMessage(BuTils::PREFIX.TextFormat::GREEN."Current flying speed: ".TextFormat::WHITE.$session->getFlySpeed());
                 $sender->sendMessage($this->getUsage());
+                return;
+            }
+
+            if($args[0] === "default" || $args[0] === "reset"){
+                $session->setFlySpeed(BuTils::DEFAULT_FLY_SPEED);
+                $sender->sendMessage(BuTils::PREFIX.TextFormat::GREEN."§aFlying speed was set back to default.");
                 return;
             }
 

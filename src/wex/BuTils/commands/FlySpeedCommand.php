@@ -7,10 +7,12 @@ namespace wex\BuTils\commands;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
+use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginOwned;
 use pocketmine\utils\TextFormat;
 use wex\BuTils\BuTils;
 
-final class FlySpeedCommand extends Command{
+final class FlySpeedCommand extends Command implements PluginOwned{
 
     public function __construct(){
         parent::__construct(
@@ -64,5 +66,9 @@ final class FlySpeedCommand extends Command{
             $session->setFlySpeed($speed);
             $sender->sendMessage(BuTils::PREFIX.TextFormat::GREEN."Flying speed set to: ".TextFormat::WHITE.$speed);
         }
+    }
+
+    public function getOwningPlugin() : Plugin{
+        return BuTils::getInstance();
     }
 }

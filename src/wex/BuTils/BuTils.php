@@ -45,7 +45,7 @@ final class BuTils extends PluginBase{
 
     private function registerCommands() : void{
         $commandMap = $this->getServer()->getCommandMap();
-        $commandMap->registerAll("BuTils", [
+        $commandMap->registerAll($this->getName(), [
             new BuTilsCommand(),
             new FlySpeedCommand(),
             new NoClipCommand(),

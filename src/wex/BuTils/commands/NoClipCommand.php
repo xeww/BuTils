@@ -8,10 +8,12 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\GameMode;
 use pocketmine\player\Player;
+use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginOwned;
 use pocketmine\utils\TextFormat;
 use wex\BuTils\BuTils;
 
-final class NoClipCommand extends Command{
+final class NoClipCommand extends Command implements PluginOwned{
 
     public function __construct(){
         parent::__construct("noclip",
@@ -45,5 +47,9 @@ final class NoClipCommand extends Command{
                 $sender->sendMessage(BuTils::PREFIX.TextFormat::GREEN."Disabled No-Clip.");
             }
         }
+    }
+
+    public function getOwningPlugin() : Plugin{
+        return BuTils::getInstance();
     }
 }

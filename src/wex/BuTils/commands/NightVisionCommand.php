@@ -9,11 +9,13 @@ use pocketmine\command\CommandSender;
 use pocketmine\entity\effect\EffectInstance;
 use pocketmine\entity\effect\VanillaEffects;
 use pocketmine\player\Player;
+use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginOwned;
 use pocketmine\utils\Limits;
 use pocketmine\utils\TextFormat;
 use wex\BuTils\BuTils;
 
-final class NightVisionCommand extends Command{
+final class NightVisionCommand extends Command implements PluginOwned{
 
     public function __construct(){
         parent::__construct(
@@ -47,5 +49,9 @@ final class NightVisionCommand extends Command{
                 $sender->sendMessage(BuTils::PREFIX.TextFormat::GREEN."Toggled night vision;".TextFormat::DARK_GREEN." ON");
             }
         }
+    }
+
+    public function getOwningPlugin() : Plugin{
+        return BuTils::getInstance();
     }
 }

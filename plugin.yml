@@ -5,3 +5,11 @@ api: 5.0.0
 author: Wex
 description: A PocketMine-MP plugin that makes life easier for minecraft builders.
 website: https://github.com/Xeww/BuTils
+
+permissions:
+  butils.command.butils:
+    default: op
+  butils.command.flyspeed:
+    default: op
+  butils.command.noclip:
+    default: op

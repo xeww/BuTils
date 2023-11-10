@@ -1,0 +1,8 @@
+# true|false, whether explosions shall be enabled.
+explosions: true
+
+# true|false, whether leaves shall decay.
+leaves_decay: true
+
+# true|false, whether the dragon egg shall teleport upon breaking.
+dragon_egg_teleport: true

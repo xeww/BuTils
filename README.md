@@ -19,7 +19,7 @@ A simple builder utility PocketMine-MP plugin, designed to be as **easy** as pos
 | Name        | Description              | Aliases    | Usage                                       | Permission                 |
 |-------------|--------------------------|------------|---------------------------------------------|----------------------------|
 | butils      | BuTils overview command  | *N/A*      | `/butils`                                   | butils.command.butils      |
-| flyspeed    | Update your flying speed | fs, fspeed | `/flyspeed [int:speed]/[string:reset]` | butils.command.flyspeed    |
+| flyspeed    | Update your flying speed | fs, fspeed | `/flyspeed [float:speed]/[string:reset]` | butils.command.flyspeed    |
 | nightvision | Toggle night vision      | nv         | `/nightvision`                              | butils.command.nightvision |
 | noclip      | Toggle no-clip           | nc         | `/noclip`                                   | butils.command.noclip      |
 

@@ -6,4 +6,7 @@ projects:
   BuTils:
     path: ""
     icon: "icon.png"
+    libs:
+      - src: dktapps/pmforms/pmforms
+        version: ^2.1.0
 ...

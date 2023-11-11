@@ -17,11 +17,12 @@ use pocketmine\scheduler\ClosureTask;
 
 final class BuTilsSession{
 
+    private Player $player;
+
     private float $flySpeed = BuTils::DEFAULT_FLY_SPEED;
 
-    public function __construct(
-        private readonly Player $player
-    ){
+    public function __construct(Player $player){
+        $this->player = $player;
         $this->check();
     }
 

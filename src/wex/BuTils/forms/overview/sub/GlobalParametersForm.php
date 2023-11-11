@@ -22,22 +22,22 @@ final class GlobalParametersForm{
 
             "Global Parameters",
             [
-                new Label(uniqid(), TextFormat::GRAY."Allows to completely disable explosions."),
+                new Label(uniqid(), TextFormat::GRAY."It allows to completely disable explosions."),
                 new Toggle("explosions", "» Enable explosions ?", $plugin->hasExplosions()),
 
-                new Label(uniqid(), TextFormat::GRAY."Allows leaves to remain without decaying."),
+                new Label(uniqid(), TextFormat::GRAY."It allows leaves to remain without decaying."),
                 new Toggle("leaves_decay", "» Enable leaves decay ?", $plugin->hasLeavesDecay()),
 
-                new Label(uniqid(), TextFormat::GRAY."The dragon egg will teleport upon interacting with it, this toggle disables that behaviour."),
+                new Label(uniqid(), TextFormat::GRAY."The dragon egg will teleport upon interacting with it. This toggle disables that behaviour."),
                 new Toggle("dragon_egg_teleport", "» Enable dragon egg teleport ?", $plugin->doesDragonEggTeleports()),
 
                 new Label(uniqid(), TextFormat::GRAY."Removes the gravity from any falling blocks (e.g. anvil, sand, etc)."),
                 new Toggle("falling_blocks", "» Enable falling blocks ?", $plugin->hasFallingBlocks()),
 
-                new Label(uniqid(), TextFormat::GRAY."Corals as well as coral blocks dies outside of water, this toggle disables that behaviour."),
+                new Label(uniqid(), TextFormat::GRAY."Corals as well as coral blocks die outside of water. This toggle disables that behaviour."),
                 new Toggle("coral_death", "» Enable coral death ?", $plugin->hasCoralDeath()),
 
-                new Label(uniqid(), TextFormat::GRAY."Allows liquid such as lava and water to not flow."),
+                new Label(uniqid(), TextFormat::GRAY."It allows liquid such as lava and water not to flow."),
                 new Toggle("liquid_flow", "» Enable liquid flow ?", $plugin->hasLiquidFlow())
             ],
 

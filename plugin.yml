@@ -3,15 +3,18 @@ main: wex\BuTils\BuTils
 version: 0.0.1
 api: 5.0.0
 author: Wex
-description: A PocketMine-MP plugin that makes life easier for builders.
+description: A build utility plugin that makes life easier for builders.
 website: https://github.com/Xeww/BuTils
 
 permissions:
   butils.command.butils:
     default: op
+
   butils.command.flyspeed:
     default: op
+
   butils.command.noclip:
     default: op
+
   butils.command.nightvision:
     default: op

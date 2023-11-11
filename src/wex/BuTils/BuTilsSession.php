@@ -30,7 +30,7 @@ final class BuTilsSession{
     }
 
     private function check() : void{
-        BuTils::getInstance()->getScheduler()->scheduleRepeatingTask(new ClosureTask(function(){
+        BuTils::getInstance()->getScheduler()->scheduleRepeatingTask(new ClosureTask(function() : void{
             if(!$this->getPlayer()->isConnected()){
                 throw new CancelTaskException();
             }

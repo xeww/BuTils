@@ -6,7 +6,7 @@ namespace wex\BuTils;
 
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\TextFormat;
+use pocketmine\utils\TextFormat as TF;
 use wex\BuTils\commands\BuTilsCommand;
 use wex\BuTils\commands\FlySpeedCommand;
 use wex\BuTils\commands\NightVisionCommand;
@@ -15,7 +15,7 @@ use wex\BuTils\commands\NoClipCommand;
 final class BuTils extends PluginBase{
 
     public const PREFIX =
-        TextFormat::WHITE."[".TextFormat::GOLD."Bu".TextFormat::GRAY.TextFormat::ITALIC."Tils".TextFormat::RESET.TextFormat::WHITE."] ".TextFormat::GRAY.TextFormat::BOLD."» ".TextFormat::RESET;
+        TF::WHITE."[".TF::GOLD."Bu".TF::GRAY.TF::ITALIC."Tils".TF::RESET.TF::WHITE."] ".TF::GRAY.TF::BOLD."» ".TF::RESET;
 
     public const DEFAULT_FLY_SPEED = 0.05;
 

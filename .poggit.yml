@@ -5,4 +5,5 @@ branches:
 projects:
   BuTils:
     path: ""
+    icon: "icon.png"
 ...

@@ -1,9 +1,9 @@
 # BuTils
-___
-> A simple builder utility PocketMine-MP plugin, designed to be as **easy** as possible to use.
+
+A simple builder utility PocketMine-MP plugin, designed to be as **easy** as possible to use.
 
 ## Features
-___
+
 - [x] Customisable Flying Speed
 - [x] Creative No-Clip
 - [x] Toggleable Night Vision
@@ -15,7 +15,7 @@ ___
 - [x] Minimalistic Overview UI
 
 ## Commands
-___
+
 | Name        | Description              | Aliases    | Usage                                       | Permission                 |
 |-------------|--------------------------|------------|---------------------------------------------|----------------------------|
 | butils      | BuTils overview command  | *N/A*      | `/butils`                                   | butils.command.butils      |

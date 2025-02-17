@@ -19,6 +19,8 @@ final class BuTils extends PluginBase{
 
     public const DEFAULT_FLY_SPEED = 0.05;
 
+    public const DEFAULT_VERTICAL_FLY_SPEED = 1;
+
     public const MIN_FLY_SPEED = 0.01;
 
     // maximum safest value to avoid issues

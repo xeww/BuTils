@@ -1,7 +1,7 @@
 name: BuTils
 main: wex\BuTils\BuTils
-version: 0.0.1
-api: 5.8.2
+version: 0.0.2
+api: 5.25.0
 author: Wex
 description: A build utility plugin that makes life easier for builders.
 website: https://github.com/Xeww/BuTils

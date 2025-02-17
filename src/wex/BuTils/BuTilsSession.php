@@ -21,6 +21,8 @@ final class BuTilsSession{
 
     private float $flySpeed = BuTils::DEFAULT_FLY_SPEED;
 
+    private float $verticalFlySpeed = BuTils::DEFAULT_VERTICAL_FLY_SPEED;
+
     public function __construct(Player $player){
         $this->player = $player;
         $this->check();
@@ -46,6 +48,14 @@ final class BuTilsSession{
 
     public function setFlySpeed(float $flySpeed) : void{
         $this->flySpeed = $flySpeed;
+    }
+
+    public function getVerticalFlySpeed() : float{
+        return $this->verticalFlySpeed;
+    }
+
+    public function setVerticalFlySpeed(float $verticalFlySpeed) : void {
+        $this->verticalFlySpeed = $verticalFlySpeed;
     }
 
     public function updateAbilities() : void{
@@ -76,7 +86,7 @@ final class BuTilsSession{
             ];
 
             $layers = [
-                new AbilitiesLayer(AbilitiesLayer::LAYER_BASE, $boolAbilities, $this->getFlySpeed(), 0.1),
+                new AbilitiesLayer(AbilitiesLayer::LAYER_BASE, $boolAbilities, $this->getFlySpeed(), $this->getVerticalFlySpeed(), 0.1),
             ];
 
             if(!$player->hasBlockCollision()){

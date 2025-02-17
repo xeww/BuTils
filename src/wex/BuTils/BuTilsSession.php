@@ -92,7 +92,7 @@ final class BuTilsSession{
             if(!$player->hasBlockCollision()){
                 $layers[] = new AbilitiesLayer(AbilitiesLayer::LAYER_SPECTATOR, [
                     AbilitiesLayer::ABILITY_FLYING => true,
-                ], null, null);
+                ], null, null, null);
             }
 
             $player->getNetworkSession()->sendDataPacket(UpdateAbilitiesPacket::create(new AbilitiesData(
